@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#160b19" />
+  <meta name="description" content="Match Love — Algo especial está a punto de comenzar." />
+  <title>Match Love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+
+  <main class="page-shell">
+    <section class="hero-card" aria-labelledby="main-title">
+      <div class="eyebrow">Una historia. Un momento. Una sorpresa.</div>
+
+      <div class="logo-mark" aria-hidden="true">
+        <span class="heart heart-left"></span>
+        <span class="heart heart-right"></span>
+      </div>
+
+      <h1 id="main-title">Match Love</h1>
+      <p class="mystery-text">
+        Hay fechas que no se olvidan.<br>
+        Y momentos que merecen algo especial.
+      </p>
+
+      <div class="divider" aria-hidden="true">
+        <span></span>
+        <i>♥</i>
+        <span></span>
+      </div>
+
+      <div id="countdown-panel">
+        <p class="countdown-label">La sorpresa se desvelará en</p>
+
+        <div class="countdown" aria-live="polite">
+          <div class="time-box">
+            <strong id="days">00</strong>
+            <span>Días</span>
+          </div>
+          <div class="separator">:</div>
+          <div class="time-box">
+            <strong id="hours">00</strong>
+            <span>Horas</span>
+          </div>
+          <div class="separator">:</div>
+          <div class="time-box">
+            <strong id="minutes">00</strong>
+            <span>Minutos</span>
+          </div>
+          <div class="separator">:</div>
+          <div class="time-box">
+            <strong id="seconds">00</strong>
+            <span>Segundos</span>
+          </div>
+        </div>
+
+        <p class="hint">17 · 07 · 2026 — 15:00</p>
+      </div>
+
+      <div id="reveal-panel" class="reveal hidden" aria-live="polite">
+        <p class="reveal-small">El momento ha llegado</p>
+        <h2>Feliz aniversario</h2>
+        <p class="reveal-names">Gonzalo &amp; Almudena</p>
+        <p class="reveal-message">
+          Que vuestra historia siga sumando recuerdos, sonrisas y momentos inolvidables.
+        </p>
+        <div class="sparkles" aria-hidden="true">✦ ♥ ✦</div>
+      </div>
+
+      <button id="sound-toggle" class="sound-toggle" type="button" aria-label="Activar o desactivar sonido">
+        <span id="sound-icon">♫</span>
+        <span id="sound-text">Ambiente</span>
+      </button>
+    </section>
+
+    <footer>
+      <p>Algunas sorpresas merecen su propio momento.</p>
+    </footer>
+  </main>
+
+  <audio id="ambient-audio" loop preload="none">
+    <source src="" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
